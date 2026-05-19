@@ -1,0 +1,44 @@
+ 2196  clear
+ 2197  git clone git@github.com:bohdan-slutskyi/git-amend-merge-homework.git
+ 2198  cd ~/Dev/git-amend-merge-homework
+ 2199  ls -la
+ 2200  git status
+ 2201  git remote -v
+ 2202  echo "__pycache__/" > .gitignore
+ 2203  echo "*.pyc" >> .gitignore
+ 2204  echo ".DS_Store" >> .gitignore
+ 2205  ls -la
+ 2206  cat .gitignore
+ 2207  git status
+ 2208  git add .gitignore
+ 2209  git status
+ 2210  git commit -m "Add gitignore"
+ 2211  git log --oneline --decorate -5
+ 2212  git status
+ 2213  git checkout -b feature
+ 2214  git branch
+ 2215  git status
+ 2216  echo "# Git amend and merge homework" > README.md
+ 2217  echo "Practice repository for git branch, amend and merge." >> README.md
+ 2218  echo "# Python cache files" >> .gitignore
+ 2219  echo "__pycache__/" >> .gitignore
+ 2220  echo "*.pyo" >> .gitignore
+ 2221  cat README.md
+ 2222  cat .gitignore
+ 2223  git status
+ 2224  git add README.md .gitignore
+ 2225  git status
+ 2226  git commit -m "Add README and update gitignore"
+ 2227  git log --oneline --decorate -5
+ 2228  git commit --amend -m "Add README and update gitignore using ammend"
+ 2229  git log --oneline --decorate -5
+ 2230  git status
+ 2231  git push -u origin feature
+ 2232  git branch -a
+ 2233  git status
+ 2234  git remote -v
+ 2235  git checkout main
+ 2236  git branch
+ 2237  git merge feature
+ 2238  git status
+ 2239  git log --oneline --decorate --graph -10
