@@ -1,6 +1,4 @@
 __pycache__/
 *.pyc
 .DS_Store
-# Python cache files
-__pycache__/
 *.pyo
